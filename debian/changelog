@@ -1,9 +1,0 @@
-ros-kinetic-uol-cmp9767m-base (0.0.1-0xenial) xenial; urgency=high
-
-  * fixed cmake
-  * added stub package
-  * Contributors: Marc Hanheide
-
- -- mhanheide <mhanheide@todo.todo>  Sun, 23 Sep 2018 23:00:00 -0000
-
-
