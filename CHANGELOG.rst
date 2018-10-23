@@ -2,6 +2,9 @@
 Changelog for package uol_cmp9767m_tutorial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.1 (2018-10-23)
+------------------
+
 0.1.0 (2018-10-23)
 ------------------
 * Merge branch 'master' into master
