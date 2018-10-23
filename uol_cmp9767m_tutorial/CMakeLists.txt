@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(uol_cmp9767m_base)
+project(uol_cmp9767m_tutorial)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -8,21 +8,13 @@ project(uol_cmp9767m_base)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  geometry_msgs
   nav_msgs
   rospy
-  sensor_msgs
+  rostest
   std_msgs
-  thorvald_twist_mux
-  velodyne_description8
-  velodyne_gazebo_plugins8
-  kinect2_description
+  uol_cmp9767m_base
 )
-
-if(CMAKE_HOST_UNIX)
-  catkin_add_env_hooks(90-uol_cmp9767m_base SHELLS sh DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/env_hooks)
-else()
-  message(FATAL_ERROR "Only UNIX builds supported.")
-endif()
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -81,7 +73,7 @@ endif()
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   nav_msgs#   sensor_msgs#   std_msgs
+#   geometry_msgs#   nav_msgs#   std_msgs
 # )
 
 ################################################
@@ -115,8 +107,8 @@ endif()
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES uol_cmp9767m_base
-#  CATKIN_DEPENDS nav_msgs rospy sensor_msgs std_msgs thorvald_simulator
+#  LIBRARIES uol_cmp9767m_tutorial
+#  CATKIN_DEPENDS geometry_msgs nav_msgs rospy rostest std_msgs uol_cmp9767m_base
 #  DEPENDS system_lib
 )
 
@@ -133,7 +125,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/uol_cmp9767m_base.cpp
+#   src/${PROJECT_NAME}/uol_cmp9767m_tutorial.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -144,7 +136,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/uol_cmp9767m_base_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/uol_cmp9767m_tutorial_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -167,15 +159,11 @@ include_directories(
 
 # all install targets should use catkin DESTINATION variables
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
-install(PROGRAMS
-  tests/simple_test.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 # install(PROGRAMS
-#   scripts/my_python_script
+#   test/simple_test.py
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
@@ -200,26 +188,16 @@ install(PROGRAMS
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 # )
 
-foreach (dir tests config launch models urdf worlds)
-    install(DIRECTORY ${dir}/
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
-endforeach(dir)
 
 #############
 ## Testing ##
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_uol_cmp9767m_base.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_uol_cmp9767m_tutorial.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-
-
-if(CATKIN_ENABLE_TESTING)
-  find_package(rostest REQUIRED)
-  add_rostest(tests/testme.test)
-endif()
