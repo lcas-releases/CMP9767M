@@ -2,6 +2,11 @@
 Changelog for package uol_cmp9767m_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.1 (2019-10-08)
+------------------
+* added rviz and fixed frames for rviz (and map)
+* Contributors: Marc Hanheide
+
 0.4.0 (2019-10-07)
 ------------------
 * multiple robots
