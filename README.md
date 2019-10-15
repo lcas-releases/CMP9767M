@@ -1,3 +1,28 @@
+## uol_cmp9767m (kinetic) - 0.4.3-1
+
+The packages in the `uol_cmp9767m` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -y --no-web -t kinetic -r kinetic uol_cmp9767m` on `Tue, 15 Oct 2019 21:44:13 -0000`
+
+These packages were released:
+- `uol_cmp9767m_base`
+- `uol_cmp9767m_tutorial`
+
+Version of package(s) in repository `uol_cmp9767m`:
+
+- upstream repository: https://github.com/LCAS/CMP9767M.git
+- release repository: https://github.com/lcas-releases/CMP9767M.git
+- rosdistro version: `0.4.2-1`
+- old version: `0.4.2-1`
+- new version: `0.4.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.16.1`
+- rosdistro version: `0.7.5`
+- vcstools version: `0.1.42`
+
+
 ## uol_cmp9767m (kinetic) - 0.4.2-1
 
 The packages in the `uol_cmp9767m` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -y --no-web -t kinetic -r kinetic uol_cmp9767m` on `Mon, 14 Oct 2019 16:27:15 -0000`
