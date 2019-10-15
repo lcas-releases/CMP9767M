@@ -1,0 +1,151 @@
+ros-kinetic-uol-cmp9767m-base (0.4.3-1xenial) xenial; urgency=high
+
+  * Assmnt1920 (#41 <https://github.com/LCAS/CMP9767M/issues/41>)
+    * new cropweed models
+    * fixed texture height
+  * Contributors: gcielniak
+
+ -- mhanheide <marc@hanheide.net>  Tue, 15 Oct 2019 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.4.2-1xenial) xenial; urgency=high
+
+  * new cropweed models (#40 <https://github.com/LCAS/CMP9767M/issues/40>)
+  * Removed map_server from test
+  * Contributors: Marc Hanheide, gcielniak
+
+ -- mhanheide <marc@hanheide.net>  Mon, 14 Oct 2019 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.4.1-1xenial) xenial; urgency=high
+
+  * added rviz and fixed frames for rviz (and map)
+  * Contributors: Marc Hanheide
+
+ -- mhanheide <marc@hanheide.net>  Tue, 08 Oct 2019 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.4.0-1xenial) xenial; urgency=high
+
+  * multiple robots
+  * bug fix
+  * Friction
+  * Contributors: Marc Hanheide
+
+ -- mhanheide <marc@hanheide.net>  Mon, 07 Oct 2019 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.3.0-1xenial) xenial; urgency=high
+
+  * fixed new thorvald (#37 <https://github.com/LCAS/CMP9767M/issues/37>)
+  * Tutorial9 (#22 <https://github.com/LCAS/CMP9767M/issues/22>)
+    * tutorial9 files
+    * fixes
+    * fixes 2
+    * adding robot frame prefix to config files
+    * using amcl instead of fake localization
+    * improve simulation performance
+  * Fix greg (#17 <https://github.com/LCAS/CMP9767M/issues/17>)
+    * Moved workshop files into a single repo
+    * Dependency fixes
+    * Nodelet/PCL dependency fix
+    * Fixed warning: package uol_cmp9767m_base should not depend on metapackage thorvald_simulator but on its packages instead
+  * Contributors: Marc Hanheide, gcielniak
+
+ -- mhanheide <marc@hanheide.net>  Mon, 23 Sep 2019 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.2.0-1xenial) xenial; urgency=high
+
+  * added sprayer (#15 <https://github.com/LCAS/CMP9767M/issues/15>)
+    * added sprayer
+    * added sprayer into model
+    * textures with alpha and better lighting
+  * Contributors: Marc Hanheide
+
+ -- mhanheide <marc@hanheide.net>  Fri, 02 Nov 2018 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.1.2-1xenial) xenial; urgency=high
+
+  * navtest added (#14 <https://github.com/LCAS/CMP9767M/issues/14>)
+  * Contributors: Marc Hanheide
+
+ -- mhanheide <marc@hanheide.net>  Fri, 02 Nov 2018 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.1.1-1xenial) xenial; urgency=high
+
+  * Update package.xml
+  * Contributors: Marc Hanheide
+
+ -- mhanheide <marc@hanheide.net>  Tue, 23 Oct 2018 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.1.0-1xenial) xenial; urgency=high
+
+  * fixed test
+  * Merge pull request #13 <https://github.com/LCAS/CMP9767M/issues/13> from gpdas/master
+    sensor.xacro updated with working velodyne and kinect2.
+  * fixed gui conflict
+  * Merge branch 'master' into master
+  * sensor.xacro updated with velodyne and kinect2.
+    raw urdf from the <sensor>_description added to sensors.xacro to avoid problems with tf_prefix and topic_names
+  * Merge pull request #12 <https://github.com/LCAS/CMP9767M/issues/12> from LCAS/rostest_marc
+    added more meaningful rostests
+  * fixed install
+  * moved tests
+  * added more meaningful rostests
+  * Merge pull request #7 <https://github.com/LCAS/CMP9767M/issues/7> from LCAS/initial_map
+    added cropped map
+  * added cropped map
+  * Contributors: Marc Hanheide, gpdas
+
+ -- mhanheide <marc@hanheide.net>  Tue, 23 Oct 2018 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.0.4-1xenial) xenial; urgency=high
+
+  * Merge pull request #5 <https://github.com/LCAS/CMP9767M/issues/5> from gpdas/master
+    Updated ground textures
+  * Cleanup
+  * Merge branch 'master' of github.com:LCAS/CMP9767M
+  * New ground textures and enclosure are added
+    
+    Fixed missing install targets in CMakeLists
+    
+    World file updated with models with new textures
+    
+    New wider robot configuration within the package
+    
+    Hokuyo laser ray visibility in gazebo is disabled
+  * Contributors: Marc Hanheide, gpdas
+
+ -- mhanheide <marc@hanheide.net>  Tue, 09 Oct 2018 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.0.3-1xenial) xenial; urgency=high
+
+  * Merge pull request #4 <https://github.com/LCAS/CMP9767M/issues/4> from gpdas/master
+    Adding sensors to the simulated robot
+  * Initial world file for uol_cmp9767m_base
+    ground texture model added
+    new world file to use the new ground model
+    launch file updated to load the new world
+    CMakeLists updated with a hook to copy the models directory
+  * dependency correction
+  * fixes to hokuyo and velodyne parameters
+  * Fix in velodyne parameters
+  * Adding hokuyo and velodyne sensors in simulation.
+  * Contributors: Marc Hanheide, gpdas
+
+ -- mhanheide <marc@hanheide.net>  Tue, 09 Oct 2018 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.0.2-1xenial) xenial; urgency=high
+
+  * Merge pull request #1 <https://github.com/LCAS/CMP9767M/issues/1> from gpdas/master
+    Modified thorvald-sim.launch to launch robot in an empty world
+  * Modified thorvald-sim.launch to launch robot in an empty world
+  * Contributors: Marc Hanheide, gpdas
+
+ -- mhanheide <mhanheide@todo.todo>  Tue, 25 Sep 2018 00:00:00 -0000
+
+ros-kinetic-uol-cmp9767m-base (0.0.1-1xenial) xenial; urgency=high
+
+  * fixed cmake
+  * added stub package
+  * Contributors: Marc Hanheide
+
+ -- mhanheide <mhanheide@todo.todo>  Mon, 24 Sep 2018 00:00:00 -0000
+
+
