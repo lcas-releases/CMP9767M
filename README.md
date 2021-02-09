@@ -1,3 +1,28 @@
+## uol_cmp9767m (melodic) - 0.6.1-1
+
+The packages in the `uol_cmp9767m` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -t melodic -r melodic uol_cmp9767m` on `Tue, 09 Feb 2021 15:07:54 -0000`
+
+These packages were released:
+- `uol_cmp9767m_base`
+- `uol_cmp9767m_tutorial`
+
+Version of package(s) in repository `uol_cmp9767m`:
+
+- upstream repository: https://github.com/LCAS/CMP9767M.git
+- release repository: https://github.com/lcas-releases/CMP9767M.git
+- rosdistro version: `0.6.0-1`
+- old version: `0.6.0-1`
+- new version: `0.6.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.1`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## uol_cmp9767m (melodic) - 0.6.0-1
 
 The packages in the `uol_cmp9767m` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -n -r melodic -t melodic uol_cmp9767m` on `Wed, 03 Jun 2020 13:04:16 -0000`
